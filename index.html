@@ -14,20 +14,18 @@
   <main>
     <section class="marcador">
       <div class="jugador jugador-x">
-        <span class="ficha">X</span>
-        <span id="puntos-x">0</span>
-      </div>
-      <div class="jugador empates">
-        <span class="ficha">Empates</span>
-        <span id="puntos-empate">0</span>
+        <span class="ficha">Jugador X</span>
+        <span class="puntos" id="puntos-x">0</span>
+        <span class="restantes">Fichas por colocar: <span id="restantes-x">3</span></span>
       </div>
       <div class="jugador jugador-o">
-        <span class="ficha">O</span>
-        <span id="puntos-o">0</span>
+        <span class="ficha">Jugador O</span>
+        <span class="puntos" id="puntos-o">0</span>
+        <span class="restantes">Fichas por colocar: <span id="restantes-o">3</span></span>
       </div>
     </section>
 
-    <p id="estado" class="estado">Turno de X</p>
+    <p id="estado" class="estado">Turno de X: colocá una ficha</p>
 
     <section id="tablero" class="tablero">
       <button class="celda" data-indice="0"></button>
@@ -45,6 +43,16 @@
       <button id="btn-reiniciar" class="boton">Nueva partida</button>
       <button id="btn-resetear" class="boton secundario">Reiniciar marcador</button>
     </div>
+
+    <section class="reglas">
+      <h2>Reglas</h2>
+      <ul>
+        <li>Cada jugador tiene tres fichas: X u O.</li>
+        <li>Por turnos, cada uno coloca una ficha en una casilla vacía.</li>
+        <li>Cuando los dos colocaron sus tres fichas, en cada turno se mueve una ficha propia a una casilla vecina vacía (hacé click en la ficha y después en el destino marcado).</li>
+        <li>Gana quien consiga tres fichas en línea vertical, horizontal o diagonal.</li>
+      </ul>
+    </section>
   </main>
 
   <script src="script.js"></script>
