@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tateti - AA 18</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Tateti</h1>
+  </header>
+
+  <main>
+    <section class="marcador">
+      <div class="jugador jugador-x">
+        <span class="ficha">X</span>
+        <span id="puntos-x">0</span>
+      </div>
+      <div class="jugador empates">
+        <span class="ficha">Empates</span>
+        <span id="puntos-empate">0</span>
+      </div>
+      <div class="jugador jugador-o">
+        <span class="ficha">O</span>
+        <span id="puntos-o">0</span>
+      </div>
+    </section>
+
+    <p id="estado" class="estado">Turno de X</p>
+
+    <section id="tablero" class="tablero">
+      <button class="celda" data-indice="0"></button>
+      <button class="celda" data-indice="1"></button>
+      <button class="celda" data-indice="2"></button>
+      <button class="celda" data-indice="3"></button>
+      <button class="celda" data-indice="4"></button>
+      <button class="celda" data-indice="5"></button>
+      <button class="celda" data-indice="6"></button>
+      <button class="celda" data-indice="7"></button>
+      <button class="celda" data-indice="8"></button>
+    </section>
+
+    <div class="botones">
+      <button id="btn-reiniciar" class="boton">Nueva partida</button>
+      <button id="btn-resetear" class="boton secundario">Reiniciar marcador</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
