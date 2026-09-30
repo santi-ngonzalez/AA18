@@ -25,12 +25,8 @@ const combinacionesGanadoras = [
   [2, 4, 6]
 ];
 
-// Casillas a las que se puede mover una ficha desde cada posición.
-// Tablero:  0 | 1 | 2
-//           3 | 4 | 5
-//           6 | 7 | 8
-// Las esquinas se mueven a sus lados y al centro, los lados a sus esquinas
-// y al centro, y desde el centro se puede ir a cualquier casilla.
+// Casillas a las que se puede mover una ficha desde cada posición:
+// Las esquinas se mueven a sus lados y al centro, los lados a sus esquinas y al centro, y desde el centro se puede ir a cualquier casilla.
 const vecinos = {
   0: [1, 3, 4],
   1: [0, 2, 4],
